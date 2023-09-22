@@ -33,9 +33,10 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   txtContainer: {
-    height: 700,
+    flex: 1,
     backgroundColor: "white",
     borderRadius: 50,
+    paddingTop: 40,
   },
   btnContainer: {
     justifyContent: "center",
