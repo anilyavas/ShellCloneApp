@@ -1,4 +1,5 @@
 import { View, Text, Image, StyleSheet } from "react-native";
+import { StationCard } from "../components/StationCard";
 
 export function Details() {
   return (
@@ -9,6 +10,7 @@ export function Details() {
       </View>
       <View style={styles.informationContainer}>
         <Text style={styles.subHeader}>Station Subscribed</Text>
+        <StationCard />
       </View>
     </>
   );
@@ -32,10 +34,15 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     paddingBottom: 100,
   },
+  subHeader: {
+    fontWeight: "bold",
+    fontSize: 25,
+    paddingTop: 20,
+    paddingLeft: 20,
+  },
   informationContainer: {
     backgroundColor: "white",
     borderRadius: 30,
     height: "100%",
   },
-  subHeader: {},
 });
